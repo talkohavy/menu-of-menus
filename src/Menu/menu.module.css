@@ -1,0 +1,53 @@
+.menuOpener {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid black;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.menuOpener:hover .label,
+.label:hover {
+  font-weight: bold;
+}
+
+.labelActive {
+  font-weight: bold;
+  color: blue;
+}
+
+.dropdown {
+  position: absolute;
+  left: 0;
+  max-width: 200px;
+  top: calc(100% + 2px);
+  height: fit-content;
+  background-color: white;
+  animation: fadeIn 0.05s;
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

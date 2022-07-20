@@ -1,0 +1,18 @@
+.menuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  min-height: 40px;
+  padding: 10px;
+  white-space: normal;
+  color: black;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: none;
+
+}
+
+.menuItem:hover {
+  background-color: #ababab;
+}

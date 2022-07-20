@@ -1,0 +1,38 @@
+.subMenu {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 40px;
+}
+
+.subMenu:hover {
+  background-color: rgb(192, 192, 192);
+}
+
+.label {
+  text-align: left;
+  /* margin: 0 20px; */
+  padding: 10px;
+  color: black;
+  white-space: normal;
+  cursor: default;
+}
+
+.dropAside {
+  position: absolute;
+  top: 0;
+  height: fit-content;
+  width: fit-content;
+  min-width: 200px;
+  background-color: white;
+  z-index: 2;
+}
+
+.dropAsideRtl {
+  right: calc(100% - 2px);
+}
+
+.dropAsideLtr {
+  left: calc(100% - 2px);
+}
